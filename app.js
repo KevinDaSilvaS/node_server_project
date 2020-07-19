@@ -8,6 +8,7 @@ const dirPartials = path.join(__dirname, "partials");
 //console.log(dir);
 
 const app = express();
+const port = process.env.PORT || 4188;
 
 app.set('view engine', 'hbs');
 app.use(express.static(dir));
@@ -54,6 +55,6 @@ app.get('*', (req, res) => {
     })
 }); 
 
-app.listen(4188, () => {
+app.listen(port, () => {
     console.log('Server running');
 });
