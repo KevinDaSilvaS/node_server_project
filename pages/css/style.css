@@ -1,0 +1,27 @@
+.title{
+    font-size: 45px;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.background-main{
+    padding: 30px;
+    background-color: black;
+}
+
+.text-main{
+    color: white;
+}
+
+input{
+    padding: 8px;
+    margin: 3px;;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    box-shadow: black 5px;
+}

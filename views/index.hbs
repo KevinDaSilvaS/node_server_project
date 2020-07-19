@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Index HBS</h1>
+    <p>dynamic elements in {{lang}}</p>
+    <input type="text" placeholder="city name" id="city">
+    <button onclick="search();">Buscar</button>
+    <h4>city</h4>
+    <h2>{{ forecast }}</h2>
+    <h2>{{ coordinates }}</h2>
+    {{>footer}}
+</body>
+<script>
+    function search(){
+        window.location.href = '?city=' + document.getElementById("city").value;
+    }
+</script>
+</html>
